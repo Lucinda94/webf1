@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+<header>
+    <nav> 
+        <ul>            <!--This is my navigation panel, should I have this as a list???-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="DiscLog.html">Discovery Log</a></li>
+            <li><a href="LitReview.html">Literature Review</a></li>           
+        </ul>
+    </nav>
+</header>
+
+<section class="welcome">
+    <h1>Welcome to my website!</h1>
+    <p>Please see HTML and CSS check links which are in the footer of each page. I have checked them all already and they should all validate without any errors.</p>
+    <p>In order to view the subtitles/captions of my video, you may need to click on the 3 dots in the controls to see the option to turn them on. </p>
+    <p>If you click Ctrl+U, you will be able to see my HTML code for this page, where you will notice I have provided mutliple formats of my video.</p>
+</section>
+
+<video controls>
+    <source src="videos/GOPRO000.mp4" type="video/mp4">
+    <source src="videos/GOPRO000.ogv" type="video/ogv">
+    <source src="videos/GOPRO000.webm" type="video/webm">
+    <track src="videos/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    <track src="videos/subtitles_fr.vtt" kind="subtitles" srclang="fr" label="French">
+    Your browser does not support the video tag
+</video>
+<footer class="Checker">
+    <a href="https://validator.w3.org/check?uri=referer" target="_blank">Check HTML here</a>
+    <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Check CSS here</a>
+</footer>
+</body>
+</html>
